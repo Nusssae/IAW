@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario Libros</title>
+    </head>
+    <body>
+        <h3>Formulario Registro Libros</h3>
+        <form action="crealibro.php" method="post">
+            <label for="nombre">NOMBRE:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="autor">Autor:</label><br>
+            <input type="text" id="autor" name="autor" required><br><br>
+            <label for="isbn">ISBN:</label><br>
+            <input type="text" id="isbn" name="isbn" required><br><br>
+            <label for="puntuacion">Puntuacion (1-5):</label><br>
+            <input type="number" id="puntuacion" name="puntuacion" min="1" max="5" required><br><br>
+            <label for="genero">Genero:</label><br>
+            <input type="text" id="genero" name="genero" required><br><br>
+
+            <input type="submit" value="Añadir libro">
+        </form>
+    </body>
+</html>
