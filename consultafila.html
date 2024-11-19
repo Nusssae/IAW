@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bibliotecas-Buscar libro</title>
+        <style>
+            <body {
+                background-color: #ccc;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                background-color: #ccc;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+                color: grey;
+                border: 1px solid black;
+                font-size: 14px;
+                            }
+
+            tr:nth-child(even) {
+            background-color: #f2f2f2;
+            }
+
+            form {
+                margin-bottom: 20px;
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            label {
+                display: block;
+                margin: 5px 0;
+            }
+            input[type="text"], input[type="number"] {
+                padding: 8px;
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Biblioteca - Buscar Libros</h1>
+       <form action="puntuaciones.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor">
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn">
+            <label for="puntuacion">Puntuacion:</label>
+            <input type="number" id="puntuacion" name="puntuacion" min="1" max="5">
+            <label for="genero">Genero:</label>
+            <input type="text" id="genero" name="genero">
+            <input type="submit" value="Buscar">
+        </form><br>
+        <table>
+            <tr>
+                <th>Nombre:</th>
+                <th>Autor:</th>
+                <th>ISBN:</th>
+                <th>Puntuacion:</th>
+                <th>Genero:</th>
+            </tr>
+        </table>
+    </body>
+</html>
